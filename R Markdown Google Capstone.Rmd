@@ -25,7 +25,7 @@ Once the data is cleaned, data analysis will be conducted to identify trends and
 
 The findings from the analysis will be presented in a comprehensive report, which will highlight the trends and patterns identified in the usage of Bellabeat's fitness tracking devices. The report will provide insights into user behavior, including the most popular features and the times of day when the devices are most frequently used. The report will also provide recommendations on potential opportunities for growth in the industry, based on the analysis of the data.
 
-I will be using Google's Data Analytics process and here is summary:
+# I will be using Google's Data Analytics process and here is summary:
 
 Ask: The first step is to define the problem statement and ask relevant questions that the analysis should answer. In this case, the objective is to identify trends and patterns in the usage of Bellabeat's fitness tracking devices to identify potential opportunities for growth in the industry.
 
