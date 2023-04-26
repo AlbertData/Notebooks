@@ -7,31 +7,38 @@ output:
     theme: cerulean
 ---
 
-# Summary
+# Introduction:
 
-Bellabeat is a high-tech company that manufactures health-focused smart products. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits.
+In recent years, the fitness industry has seen a surge in demand for health-focused smart products. Bellabeat, a high-tech company, has established itself as a key player in this market by manufacturing fitness tracking devices that cater specifically to women. Their products, which include the Bellabeat App, Leaf Fitness Tracker, Time Wellness Watch, Spring Smart Water Bottle, and Bellabeat Membership Plan, enable users to collect data on activity, sleep, stress, and reproductive health, thus empowering them with knowledge about their own health and habits.
 
-### Their main products include:
+As a data analyst, the objective is to clean, analyze, and report findings on Bellabeat's fitness tracking data. The stakeholders in this analysis are Urška Sršen, the Bellabeat co-founder and CCO, Sando Mur, the Bellabeat co-founder, and the Bellabeat Marketing Analytics team. The primary goal of this analysis is to identify trends and patterns in the usage of Bellabeat's smart fitness devices that will help identify potential opportunities for growth in the industry.
 
--   The Bellabeat App (Fitness App)
+# Data Cleaning:
 
--   Leaf (Fitness Tracker)
+Before proceeding with the analysis, data cleaning is necessary to ensure the accuracy of the findings. The data collected from Bellabeat's fitness tracking devices contains missing and erroneous values that must be cleaned to avoid skewing the results. Additionally, data outliers must be identified and removed to prevent them from affecting the overall findings.
 
--   Time (Wellness Watch)
+# Data Analysis:
 
--   Spring (Smart Water Bottle)
+Once the data is cleaned, data analysis will be conducted to identify trends and patterns in the usage of Bellabeat's fitness tracking devices. The analysis will be performed on the various metrics collected by the devices, including activity, sleep, stress, and reproductive health. Correlations between these metrics will be explored to identify relationships between them that may provide insight into the users' health and habits.
 
--   Bellabeat Membership Plan
+# Findings:
 
-### Stakeholders:
+The findings from the analysis will be presented in a comprehensive report, which will highlight the trends and patterns identified in the usage of Bellabeat's fitness tracking devices. The report will provide insights into user behavior, including the most popular features and the times of day when the devices are most frequently used. The report will also provide recommendations on potential opportunities for growth in the industry, based on the analysis of the data.
 
--   Urška Sršen -\> Bellabeat cofounder and CCO
+I will be using Google's Data Analytics process and here is summary:
 
--   Sando Mur -\> Bellabeat cofounder
+Ask: The first step is to define the problem statement and ask relevant questions that the analysis should answer. In this case, the objective is to identify trends and patterns in the usage of Bellabeat's fitness tracking devices to identify potential opportunities for growth in the industry.
 
--   Bellabeat Marketing Analytics team
+Prepare: In the second step, data is gathered from various sources and prepared for analysis. This includes cleaning and transforming the data to ensure its accuracy and suitability for analysis.
 
-The stakeholders would like to examine the data in order to identify trends and patterns in the usage of Smart Fitness devices that will identify potential opportunities for growth of Bellabeat in the industry.
+Process: The third step involves organizing and manipulating the data to make it suitable for analysis. This includes sorting, filtering, and grouping the data as needed.
+
+Analyze: In the fourth step, the prepared data is analyzed using statistical methods and visualizations to identify trends and patterns. This step involves exploring correlations between different metrics to derive insights.
+
+Share: In the fifth step, the findings from the analysis are presented in a comprehensive report that is easily understood by stakeholders. This step involves communicating the insights in a clear and concise manner.
+
+Act: In the final step, the recommendations based on the analysis are implemented to drive business growth. This step involves taking action based on the insights derived from the analysis and monitoring the impact of those actions on the business
+
 
 # Ask
 
@@ -64,6 +71,7 @@ The data only has thirty participants which is the minimum sample size for a dec
 # Process
 
 I will be using RStudio for my analysis because of the size of the data and reproducibility that R offers. R is also useful when visualizing data for stakeholders.
+
 
 ### Packages Used for Analysis:
 
@@ -285,9 +293,8 @@ Questions we will be asking in order to identify trends and patterns:
 
 4.  On which days of the week are users most active?
 
-5.  What is the correlation between steps and calories?
+5.  Which times of the day are users most active?
 
-6.  Which times of the day are users most active?
 
 ### Summary of data
 
@@ -311,6 +318,7 @@ Customers' average daily steps are 7638, their average distance is 5.490, and th
 The average amount of sleep every night is around 6 hours, which is only suitable for some age groups and not for others.
 
 The main finding from this process is that there are 33 users who update their daily activity, 24 users who update their sleep activity.
+
 
 ## 1. How often do users use their devices in a month?
 
@@ -368,6 +376,20 @@ plot1
 **Findings**:
 
 Most of the users use their devices regularly in a month but there are a few user that rarely use their devices. This suggests that users who own smart fitness devices will most probably use them on a regular bases.
+The findings could be attributed to several factors, including:
+
+Motivation: Customers who are highly motivated to improve their fitness and health are more likely to use their smart fitness devices regularly. On the other hand, customers who lack motivation or are not interested in fitness may rarely use their devices.
+
+Age: Age could be another factor. Older customers may not be as motivated to use their devices regularly compared to younger customers.
+
+Fitness level: Customers who are already fit may not see the need to use their smart fitness devices regularly, while those who are trying to improve their fitness may be more likely to use them.
+
+Technical difficulties: Some customers may face technical difficulties when using their smart fitness devices, which could discourage them from using them regularly.
+
+Busy lifestyle: Customers with busy lifestyles may not find the time to use their devices regularly, while those with more free time may be more likely to use them.
+
+In conclusion, while most of Bellabeat's customers use their smart fitness devices regularly, the reasons why some customers rarely use their devices could be due to a variety of factors. It is important for Bellabeat to understand these factors and take them into consideration when developing marketing strategies to improve overall business growth.
+
 
 ## 2. Time spent in bed vs time spent asleep
 
@@ -440,7 +462,22 @@ plot3
 
 **Findings**:
 
-Most of the users fall asleep quickly after going to bed however there are a small percentage of users that takes a long while to fall asleep.
+During the data analysis, we found that most of Bellabeat's customers fall asleep quickly after going to bed, while there is a small percentage of users who take a long time to fall asleep.
+
+Several factors could contribute to this finding, including:
+
+Age: As people age, it may take longer for them to fall asleep. It is possible that the users who take longer to fall asleep are older on average than those who fall asleep quickly.
+
+Sleep habits: The users who take longer to fall asleep may have different sleep habits than those who fall asleep quickly. For example, they may have irregular sleep schedules or engage in activities that make it harder to fall asleep quickly.
+
+Stress and anxiety: Users who are experiencing high levels of stress and anxiety may have a harder time falling asleep quickly. Those who are less stressed and anxious may be more likely to fall asleep quickly.
+
+Health issues: Certain health conditions can affect a person's ability to fall asleep quickly, such as sleep apnea, restless leg syndrome, and chronic pain. It is possible that some of the users who take longer to fall asleep have these or other health issues.
+
+Environmental factors: External factors such as noise, light, and temperature can affect a person's ability to fall asleep quickly. It is possible that the users who take longer to fall asleep are exposed to more disruptive environmental factors than those who fall asleep quickly.
+
+Overall, the finding that some users take longer to fall asleep could be due to a variety of factors. It is important for Bellabeat to understand these factors and take them into consideration when developing products and services that aim to improve sleep quality for their customers.
+
 
 ## 3. The relationship between steps and amount of sleep
 
@@ -467,7 +504,23 @@ plot4
 
 **Findings**:
 
-There is a positive relationship between the amount of sleep and the number of steps of users. This suggests that taking more steps during the day will lead to better sleep during the night.
+During our analysis, we found a positive relationship between the amount of sleep and the number of steps taken by Bellabeat's users. This suggests that taking more steps during the day may lead to better sleep at night.
+
+Several factors could contribute to this finding, including:
+
+Physical activity: People who are more physically active during the day tend to sleep better at night. It is possible that the users who take more steps are more active during the day, which in turn helps them sleep better at night.
+
+Sleep quality: The users who take more steps may also have better sleep quality, which could contribute to the positive relationship between steps and sleep. Better sleep quality could result in feeling more rested and energized, which in turn could lead to being more active during the day.
+
+Health and lifestyle: Users who take more steps may be more health-conscious and have a healthier lifestyle overall, which could contribute to better sleep quality. Additionally, users who prioritize exercise and physical activity may also prioritize getting enough sleep to support their active lifestyle.
+
+Self-monitoring: It is possible that the act of tracking steps and sleep using a fitness tracker motivates users to be more active during the day and prioritize their sleep at night.
+
+Overall, the finding that there is a positive relationship between steps and sleep suggests that physical activity during the day could have a positive impact on sleep quality at night. Bellabeat can use this information to develop products and services that encourage users to be more active during the day and improve their sleep quality at night.
+
+Additional:
+This is excellent research which supports these findings: "Physical Activity and Sleep: A Review" by Kredlow et al. (2015), which summarizes the existing research on the relationship between physical activity and sleep.
+
 
 ## 4. On which days of the week are users most active?
 
@@ -512,34 +565,20 @@ plot6
 
 Users are most active on Saturdays while they are least active on Sundays. Users normally reach the recommended 7500 steps every day except on Sundays.
 
-## 5. What is the correlation between steps and calories?
+There could be several possible reasons why users are most active on Saturdays and less active on Sundays:
 
-```{r echo=TRUE}
+Work schedules: Many people have a Monday to Friday work schedule and may have more time to engage in physical activity on Saturdays than on weekdays. On Sundays, people may be resting and recovering from the previous week, leading to lower levels of activity.
 
-# Correlation between steps and calories
+Social activities: Saturdays are often associated with social activities, such as sports games, hiking, or other outdoor activities. On the other hand, Sundays are often considered as rest days or family days, which may not involve much physical activity.
 
-daily_steps_calories <- daily_activity %>% 
-  group_by(id) %>% 
-  summarise(total_steps = sum(totalsteps), total_calories = sum(calories))
-```
+Exercise routines: Some people may have a specific exercise routine that they follow, and this routine may be less frequent or absent on Sundays.
 
-```{r echo=TRUE}
+Other commitments: Users may have other commitments on Sundays, such as attending religious services or family events, which may limit their time for physical activity.
 
-# Visualization of the correlation between steps and calories
+As for the finding that users do not reach the recommended 7500 steps on Sundays, this could be related to the above reasons, or users may simply be taking a day off from physical activity to rest and recover.
 
-plot7 <- ggplot(daily_steps_calories, aes(x= total_steps, y= total_calories), fill = blue)+
-  geom_point()+
-  geom_smooth(color = "green", method = 'loess', formula = 'y ~ x')+
-  labs(title = "Steps walked Vs Calories burnt", x= "Total Steps", y= "Total Calories")
 
-plot7
-```
-
-**Findings**:
-
-There is a positive correlation between steps taken and calories burned. This suggests that taking more steps will ultimately burn more calories.
-
-## 6. Which times of the day are users most active?
+## 5. Which times of the day are users most active?
 
 ```{r echo=TRUE}
 
@@ -571,16 +610,36 @@ Users are most active in the evening (17:00 - 19:00) and second most in the afte
 
 User activity declines during the night from 22:00 to 05:00.
 
+Possible reasons for these findings could include:
+
+Work schedules: Many people have jobs that require them to be active during the day and sitting at a desk in the evening, which could explain why activity is highest in the afternoon and evening.
+
+Social activities: People may be more active in the evening because they are more likely to engage in social activities such as going out with friends or participating in sports leagues.
+
+Sleep: The decline in activity during the night could be due to users being asleep during this time, which is a normal part of their daily routine.
+
+Weather: The time of day that people are most active could also be influenced by weather patterns. For example, people may be more likely to go for a run or walk during cooler temperatures in the evening rather than during the hotter parts of the day.
+
+*It's important to note that these are just possible reasons and further analysis and research would be needed to confirm or refute them.
+
 # Share
 
 ### Recommendations:
 
--   We can see that walking more steps gets you more sleep so we can recommend to our users who are having difficulties with sleep to walk more or be more active during the day time in order to get more sleep at night.
 
--   Users are not getting the recommended 7 hours of sleep every night and an App notification at a specified bedtime might help improve the sleeping patterns of users.
+Based on the findings from the analysis, here are some recommendations for Bellabeat:
 
--   Since users do not reach the recommended numbers of steps on Sundays, we can send them notifications on Bellabeat App to complete their daily steps goal. This will motivate users and build loyalty.
+Promote regular device usage: Since most users who own smart fitness devices use them on a regular basis, Bellabeat should focus on encouraging regular usage of their products. This can be achieved through personalized reminders, gamification and social media campaigns.
 
--   Some users are struggling to fall asleep after getting into bed, so we can publish some articles (best sleeping habits, how to improve sleep quality etc) on our website and App which may help them get the recommended sleep.
+Improve sleep tracking features: As sleep has been shown to be an important factor in overall health, Bellabeat should consider improving their sleep tracking features. This could include providing personalized sleep recommendations, tracking sleep quality and duration, and offering tips for improving sleep hygiene.
 
--   Walking more steps burns more calories, so we can add a new feature to our app which sets a goal for the day based on your fitness goals and if the goal is not met it sends notifications to our users to complete their goal, which may help improve their fitness.
+Promote weekend activity: As users are least active on Sundays, Bellabeat could offer weekend challenges and promotions to encourage users to be more active during weekends. This could include partnering with fitness influencers or offering discounts on membership plans.
+
+Emphasize the benefits of daytime activity: As users are most active in the evening and afternoon, Bellabeat could emphasize the benefits of daytime activity, such as increased productivity and energy, through social media campaigns and personalized notifications.
+
+Expand the range of products: Bellabeat could consider expanding their product range to include devices that are specifically designed for certain activities, such as swimming or cycling, to attract a wider range of customers.
+
+Overall, by implementing these recommendations, Bellabeat can improve their marketing strategy and increase customer engagement and satisfaction, leading to overall growth of the business.
+
+
+*Disclaimer: It is important to note that the findings and recommendations presented in this report are based on a relatively small sample size of 30 participants from the Fitbit Fitness Tracker Data. While efforts were made to ensure the data was accurate and representative, the results may not be applicable to the broader population. Thus, further analysis with a larger and more diverse sample is needed to validate these findings and recommendations.
